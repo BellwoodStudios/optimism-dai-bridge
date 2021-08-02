@@ -17,18 +17,18 @@
     "test-e2e": "mocha --config .mocharc-e2e.js",
     "test:fix": "yarn lint:fix && yarn format:fix && yarn test && yarn typecheck",
     "deploy:mainnet": "TS_NODE_TRANSPILE_ONLY=1 ts-node ./scripts/deployMainnet.ts",
-    "deploy:kovan": "TS_NODE_TRANSPILE_ONLY=1 ts-node ./scripts/deployKovan.ts"
+    "deploy:kovan": "TS_NODE_TRANSPILE_ONLY=1 ts-node ./scripts/deployKovan.ts",
+    "deploy:test-spell-kovan": "TS_NODE_TRANSPILE_ONLY=1 ts-node ./scripts/deployTestSpellKovan.ts"
   },
   "dependencies": {
     "@codechecks/client": "0.1.10-beta",
     "@eth-optimism/contracts": "0.0.0-2021515174945",
     "@eth-optimism/hardhat-ovm": "^0.2.2",
     "@eth-optimism/smock": "^1.1.4",
-    "@eth-optimism/solc": "0.5.16-alpha.7",
     "@eth-optimism/watcher": "^0.0.1-alpha.9",
     "@nomiclabs/ethereumjs-vm": "^4.2.2",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.4",
     "@nomiclabs/hardhat-waffle": "=2.0.1",
     "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^3.4.0",
